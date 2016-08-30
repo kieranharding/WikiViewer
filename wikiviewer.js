@@ -1,5 +1,4 @@
-//Polluting the global
-$results = $("#results")
+var $results = $("#results")
 var baseStr = "https://en.wikipedia.org/w/api.php"
 
 $("#search").click(function(e) {
