@@ -1,8 +1,15 @@
+body {
+  margin: 15px auto;
+  background-color: #DEDEDE;
+  max-width: 600px;
+  width: 95%;
+}
+
 #search {
   font-weight: bold;
-  font-size: 1.5em;
 }
 
 #random {
   font-size: 1em;
+  margin-bottom: 4px;
 }
