@@ -1,12 +1,16 @@
 function displayResults(data) {
+  console.log(data)
   var titles = data[1]
   var extracts = data[2]
   var links = data[3]
-  titles.map(function (res, idx) {
-    $my.results.append('<p class="result-title">' + res + '</p>')
-      .append('<a href="' + links[idx] + '" class="result-link">' + links[idx] + '</a>')
-      .append('<p class="result-snippet">' + extracts[idx] + '</p>')
-  })
+  var html = '<div class="wiki-result">'
+  for (var idx = 0; idx < titles.length; idx++) {
+    html += '<span class="result-title">' + titles[idx] + '</span>'
+    html += '<a href="' + links[idx] + '" class="result-link">' + links[idx] + '</a>'
+    html += '<p class="result-snippet">' + extracts[idx] + '</p>'
+    html += '</div>'
+  }
+  $my.results.append(html)
 }
 
 function submitSearch() {
