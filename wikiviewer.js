@@ -1,12 +1,12 @@
 function displayResults(data) {
-  console.log(data)
   var titles = data[1]
   var extracts = data[2]
   var links = data[3]
-  var html = '<div class="wiki-result">'
+  var html = ''
   for (var idx = 0; idx < titles.length; idx++) {
-    html += '<span class="result-title">' + titles[idx] + '</span>'
-    html += '<a href="' + links[idx] + '" class="result-link">' + links[idx] + '</a>'
+    html += '<div class="wiki-result">'
+    html += '<a href="' + links[idx] + '" class="result-link">'
+    html += '<span class="result-title">' + titles[idx] + '</span>' + '</a>'
     html += '<p class="result-snippet">' + extracts[idx] + '</p>'
     html += '</div>'
   }
@@ -42,7 +42,7 @@ $(function() {
     baseStr: "https://en.wikipedia.org/w/api.php"
   }
 
-  $("#search").click(function(e) {
+  $("#search-icon").click(function(e) {
     submitSearch()
   })
 

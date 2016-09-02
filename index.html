@@ -12,14 +12,19 @@
     <link rel="stylesheet" type="text/css" href="wikiviewer.css" />
   </head>
   <body>
-    <div id="random">
-      <a href="https://en.wikipedia.org/wiki/special:random" target="_blank">
-        Random Article
-      </a>
-    </div>
 
-    <input id="query" type="text" placeholder="What's your interest?" />
-    <i class="fa fa-search" id="search" aria-hidden="true"></i>
+    <div id="header">
+      <div id="search-box"  >
+        <input id="query" type="text" placeholder="Search here" />
+        <i class="fa fa-search" id="search-icon" aria-hidden="true"></i>
+        <span id="random">
+          ...or go to a
+          <a href="https://en.wikipedia.org/wiki/special:random" target="_blank">
+            random article
+          </a>
+        </span>
+      </div>
+    </div>
     <div id="results"></div>
   </body>
 </html>
