@@ -1,6 +1,10 @@
 body {
-  background-color: #DEDEDE;
+  background-color: #9992B8;
   position: absolute;
+}
+
+a:link {
+  color: #094D44;
 }
 
 #header {
@@ -9,14 +13,22 @@ body {
   left: 0px;
   width: 100%;
   height: 3em;
-  background-color: #BABABA;
+  background-color: #031533;
   z-index: 100;
 }
 
+#brand {
+  margin-top: 0.5em;
+  display: inline;
+  font-size: 2em;
+  font-weight: bold;
+  color: #8C9AB2;
+}
+
 #search-box {
-  position: relative;
-  width: 50%;
-  margin: 0.5em auto;
+  margin-top: 0.5em;
+  margin-left: 1em;
+  display: inline;
 }
 
 #query {
@@ -26,11 +38,13 @@ body {
 
 #search-icon {
   font-weight: bold;
+  color: #8C9AB2;
 }
 
 #random {
   font-size: 1em;
   margin-left: 2em;
+  color: #8C9AB2;
 }
 
 #search-box {
@@ -46,8 +60,8 @@ body {
 
 .wiki-result {
   margin-top: 1em;
-  background-color: white;
-  border: 2px solid blue;
+  background-color: #8C9AB2;
+  border: 2px solid #102952;
   border-radius: 10px;
   padding: 1em;
 }
